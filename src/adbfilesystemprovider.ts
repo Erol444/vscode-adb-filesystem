@@ -95,7 +95,7 @@ export class AdbFS implements vscode.FileSystemProvider {
 
             console.log("deviceId:"+adbpath.deviceId+" path:"+adbpath.path);
             try {
-                let files = await adbClient.readdir(adbpath.deviceId, adbpath.path)
+                let files = await adbClient.readdir(adbpath.deviceId, adbpath.path);
                 console.log("readdir files:", files);
                 let entries: [string, vscode.FileType][] = [];
                 entries = files.map((file: any) => {
@@ -261,9 +261,7 @@ export class AdbFS implements vscode.FileSystemProvider {
         parts.shift();
         let path = parts.join("/");
         if (path == "") {
-            path = "/sdcard";
-        } else {
-            path = "/sdcard/" + path;
+            path = "/";
         }
         return { "deviceId": deviceId, "path": path };
     }

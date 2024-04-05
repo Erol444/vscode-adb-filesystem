@@ -1,9 +1,9 @@
 {
-	"name": "adb-filesystem",
-	"displayName": "ADB File System",
-	"description": "file system for connected android devices, using adb",
-	"version": "0.0.3",
-	"publisher": "MakotoHamanaka",
+	"name": "adb-files",
+	"displayName": "ADB Files",
+	"description": "File system for connected Android devices, using adb",
+	"version": "0.0.4",
+	"publisher": "Erol444",
 	"engines": {
 		"vscode": "^1.42.0"
 	},
@@ -15,9 +15,10 @@
 		"onFileSystem:adbfs"
 	],
 	"main": "./out/extension.js",
+	"icon": "assets/icon.png",
 	"author": {
-		"name": "Makoto Hamanaka",
-		"email": "ham.lua@gmail.com"
+		"name": "Erol444",
+		"email": "erol123444@gmail.com"
 	},
 	"license": "MIT",
 	"contributes": {
@@ -65,6 +66,6 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/mhama/vscode-adb-filesystem.git"
+		"url": "https://github.com/Erol444/vscode-adb-filesystem"
 	}
 }

@@ -1,28 +1,21 @@
 # ADB File System
 
-You can browse the files inside the connected Android devices using VSCode!
+It allows to use file system on your ADB-connected device (via `adbkit`). Currently supported:
 
-(experimental implementation)
+* browse devices
+* browse directories
+* read/write files
+* rename file/directory
+* move file/directory
+* create file/directory
+* delete file/directory
 
-## Features
-
-* file system using ADB (adbkit)
-  * browse devices
-  * browse directries
-    * currently under /sdcard folder only.
-  * read file
-  * write file
-  * rename file/directory
-  * move file/directory
-  * create file/directory
-  * delete file/directory
-
-![example](images/example1.png)
+![example](images/file-explorer.webp)
 
 ## Getting Started
 
-* install this extension 'ADB File System'.
-* press F1 key in VSCode and select 'Setup Android Device Files Workspace'.
+* install this extension `ADB File System`.
+* press F1 key in VSCode and select `Setup Android Device Files Workspace`.
   * if the command does not appear, try with new window by CTRL+SHIFT+N.
 
 ## Requirements
@@ -33,17 +26,3 @@ You can browse the files inside the connected Android devices using VSCode!
   * usually via USB cable.
   * over wifi is also possible but need to follow some adb instructions (please see documents of adb).
 * target devices must have developer mode turned on, and also USB debugging enabled.
-
-## Extension Settings
-
-* No settings available
-
-## Known Issues
-
-* Currently, only files or folders under the `/sdcard` folder are available.
-
-## Release Notes
-
-* see CHANGELOG
-
-
